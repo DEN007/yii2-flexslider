@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
 class FlexSliderAsset extends AssetBundle
 {
 
-    public $sourcePath = '@bupy7/flexslider/assets';
+    public $sourcePath = '@bower/flexslider/dist';
 
     public $css = [
         'flexslider.css',
@@ -21,8 +21,7 @@ class FlexSliderAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\web\JqueryAsset',
     ];
 
 }
